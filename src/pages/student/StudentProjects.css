@@ -1,0 +1,15 @@
+.empty-cta {
+  text-align: center;
+  padding: 60px;
+  margin-bottom: 24px;
+}
+.empty-icon { font-size: 48px; margin-bottom: 16px; }
+.empty-cta h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.empty-cta p { color: var(--text2); margin-bottom: 20px; }
+
+.range-input {
+  width: 100%;
+  accent-color: var(--primary);
+  height: 6px;
+  cursor: pointer;
+}

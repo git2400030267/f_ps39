@@ -1,0 +1,47 @@
+.student-overview {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+}
+
+.progress-overview { padding: 24px; }
+.radial-wrap { position: relative; }
+.radial-center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+.radial-pct { font-size: 28px; font-weight: 900; color: var(--primary-light); }
+.radial-label { font-size: 11px; color: var(--text3); margin-top: 2px; }
+
+.my-projects-list { padding: 24px; }
+.my-project-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(45,45,94,0.5);
+  gap: 16px;
+}
+.my-project-row:last-child { border-bottom: none; }
+.mp-title { font-size: 14px; font-weight: 600; }
+.mp-cat { font-size: 12px; color: var(--text3); margin-top: 2px; }
+.mp-right { display: flex; align-items: center; gap: 12px; }
+
+.feedback-preview {
+  padding: 14px;
+  background: rgba(99,102,241,0.05);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(99,102,241,0.1);
+}
+.fp-header { display: flex; justify-content: space-between; margin-bottom: 6px; }
+.fp-project { font-size: 13px; font-weight: 700; }
+.fp-stars { color: #f59e0b; font-size: 13px; }
+.fp-text { font-size: 13px; color: var(--text2); line-height: 1.5; }
+
+@media (max-width: 1024px) {
+  .student-overview { grid-template-columns: 1fr; }
+}

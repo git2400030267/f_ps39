@@ -1,0 +1,75 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.portfolio-section { padding: 24px; }
+.section-title { font-size: 15px; font-weight: 700; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+
+.visibility-toggle { display: flex; align-items: center; gap: 12px; }
+
+.skill-input-row { display: flex; gap: 10px; margin-bottom: 16px; }
+.skill-input-row .input-field { flex: 1; }
+
+.skills-display { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(99,102,241,0.15);
+  border: 1px solid rgba(99,102,241,0.3);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-light);
+}
+.skill-chip button {
+  background: none;
+  border: none;
+  color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  opacity: 0.7;
+}
+.skill-chip button:hover { opacity: 1; }
+
+.portfolio-projects-list { display: flex; flex-direction: column; gap: 8px; }
+.portfolio-project-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--bg2);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Preview */
+.preview-card { padding: 32px; }
+.preview-header { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 24px; }
+.preview-avatar {
+  width: 72px; height: 72px;
+  background: var(--gradient);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; font-weight: 700; color: #fff;
+  flex-shrink: 0;
+}
+.preview-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+.preview-link {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 13px; color: var(--primary-light);
+}
+.preview-bio { font-size: 15px; color: var(--text2); line-height: 1.7; margin-bottom: 24px; }
+.preview-section { margin-bottom: 24px; }
+.preview-section h3 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+.preview-projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.preview-project { padding: 16px; }
+
+@media (max-width: 768px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .portfolio-section[style*="1 / -1"] { grid-column: 1; }
+}

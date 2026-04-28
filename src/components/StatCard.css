@@ -1,0 +1,36 @@
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.stat-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--text2);
+  margin-top: 4px;
+}
+
+.stat-trend {
+  font-size: 11px;
+  margin-top: 4px;
+  font-weight: 600;
+}
+.stat-trend.up { color: var(--success); }
+.stat-trend.down { color: var(--danger); }
